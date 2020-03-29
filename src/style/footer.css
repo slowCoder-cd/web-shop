@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* help帮助区域 */
+#helpr{
+    background-color: #f3f3f3;
+    height: 100px;
+    line-height: 100px;
+    font-size: 16px;
+    color: #313131;
+    font-weight: 100;
+    
+}
+#helpr .item{
+    width: 215px;
+    float: left;
+    height: 100px;
+}
+#helpr .item img{
+    margin-top: 30px;
+    margin-left: 40px;
+    float: left;
+}
+#helpr .content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#helpr .item label{
+    float: left;
+    margin-left: 20px;
+    font-weight: 400;
+    color: #6a6a6a;
+}
+/* 底部区域 */
+.footer{
+    width: 100%;
+    min-height: 300px;
+}
+.footer .footer_content{
+    width: 1200px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+/* 电话联系区域 */
+.footer .footer_item{
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.footer_item .item_son{
+    float: left;
+    width: 25%;
+} 
+.footer_item .item_son .item_h3{
+    color: #313131;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.footer_item .item_time{
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #313131;
+    font-size: 14px;
+}
+.footer_item img{
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-top: 6px;
+    margin-right: 6px;
+    padding-left: 15px;
+}
+.footer_item  p{
+    float: left;
+    color: #313131;
+    font-size: 14px;
+}
+/* 新手指引部分 */
+.footer .footer_bottom{
+    overflow: hidden;
+    border-bottom: 1px solid #e1e1e1;
+    background: url(https://www.sundan.com/themes/shundian/images/footer_ji.png) scroll 925px center no-repeat;
+    padding: 10px 0px;
+}
+.footer_bottom .bottom_left{
+    width: 830px;
+    float: left;
+}
+.footer_bottom .left_son{
+    float: left;
+    padding: 10px 0px 10px 15px;
+    width: 23%;
+}
+.footer_bottom .left_son .left_h3{
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    line-height: 40px;
+}
+.footer_bottom .left_son a{
+    font-size: 12px;
+    color: #707070;
+    width: 100%;
+    clear: both;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+}
+.footer_bottom a:hover{
+    color: #00bad6;
+}
+.footer_bottom .bottom_right{
+    width: 350px;
+    float: right;
+    text-align: left;
+    color: #313131;
+}
+.bottom_right .right_h3{
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    line-height: 40px;
+}
+.bottom_right .right_p{
+    line-height: 24px;
+    font-size: 12px;
+}
+.bottom_right .right_link{
+    width: 60%;
+}
+.bottom_right .right_link a{
+    display: block;
+    width: 50%;
+    float: left;
+    text-decoration: none;
+    margin-top: 10px ;
+    color: #707070;
+    font-size: 12px;
+}
+.bottom_right .right_link a:hover{
+    color: #00bad6;
+}
+/* 版权信息 */
+.footer .footer_help{
+    text-align: center;
+    margin: 20px;
+    color: #313131;
+    font-size: 12px;
+    text-align: center;
+}

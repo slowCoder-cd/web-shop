@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <style>
+        .login_content{
+            width: 100%;
+            height: 600px;
+            background:url(https://www.sundan.com/public/images/4d/b9/d5/f7f549ddc2dd70a911ab5d1bd67d93d545532789.jpg) no-repeat center center ;
+            
+        }
+        .login_content .main{
+            width: 1226px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .login_content .login{
+            padding: 30px;
+            margin-top: 100px;
+            width: 320px;
+            height: 400px;
+            float: right;
+            background-color: #fff;
+            -webkit-box-shadow: 0 0 20px #d9d9d9;
+            box-shadow: 0 0 20px #d9d9d9;
+        }
+        .login_content .login h2{
+            margin-bottom: 10px;
+            color: #313131;
+            font-weight: normal;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .login_content .login .news{
+            display: flex;
+            width: 100%;
+            height: 38px;
+            margin-top: 20px;
+        }
+        .login_content .login .news i{
+            width: 40px;
+            height: 40px;
+            background: url(https://www.sundan.com/themes/shundian/images/login_name.png) no-repeat center center #f3f3f3;
+        }
+        .login_content .login .news input{
+            flex: 1;
+            text-indent: 10px;
+        }
+        .login_content .login .fname,.login_content .login .fpass{
+            font-size: 12px;
+        }
+        .login_content .login .vcode{
+            width: 100%;
+            height: 38px;
+            margin-top: 20px;
+        }
+        .login_content .login .vcode input{
+            width: 100px;
+            height: 38px;
+            outline: none;
+            border: 1px solid skyblue;
+            text-indent: 5px;
+        }
+        .login_content .login .vcode span{
+            display: inline-block;
+            width: 100px;
+        }
+        .login_content .login .fnum{
+            display: block;
+            font-size: 12px;
+           
+        }
+        .login_content .login .forget{
+            margin-bottom: 10px;
+        }
+        .login_content .login .forget a{
+            color: #111;
+            margin: 0 5px;
+            font-size: 14px;
+        }
+        .login_content .login button{
+            width: 100%;
+            height: 40px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid skyblue;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="login_content">
+        <div class="main">
+            <div class="login">
+                <h2>用户登录</h2>
+                <form action="">
+                    <p class="news"><i></i><input type="text" name="usename" placeholder="用户名/邮箱地址/手机号"/></p>
+                    <span class="fname">111</span>
+                    <p class="news"><i style="background-image: url(https://www.sundan.com/themes/shundian/images/member-password.png);"></i><input type="text" name="password"  placeholder="请输入密码"/></p>
+                    <span class="fpass">111</span>
+                    <div class="vcode">
+                        <input type="text">
+                        <span class="num"></span>
+                        <span>请输入验证码</span>
+                    </div>
+                    <span class="fnum">111</span>
+                    <div class="forget">
+                        <a href="javascript:;">忘记密码</a>
+                        <a href="javascript:;">免费注册</a>
+                    </div>
+                    <button type="button">登录</button>
+                    <div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+   <script src="../script/loadhf.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

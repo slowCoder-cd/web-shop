@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <style>
+        .register_content{
+            width: 100%;
+            height: 600px;
+            background:url(https://www.sundan.com/public/images/4d/b9/d5/f7f549ddc2dd70a911ab5d1bd67d93d545532789.jpg) no-repeat center center ;
+            
+        }
+        .register_content .main{
+            width: 1226px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .register_content .register{
+            padding: 30px;
+            margin-top: 100px;
+            width: 320px;
+            height: 350px;
+            float: right;
+            background-color: #fff;
+            -webkit-box-shadow: 0 0 20px #d9d9d9;
+            box-shadow: 0 0 20px #d9d9d9;
+        }
+        .register_content .register h2{
+            margin-bottom: 10px;
+            color: #313131;
+            font-weight: normal;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .register_content .register .news{
+            display: flex;
+            width: 100%;
+            height: 38px;
+        }
+        .register_content .register .news i{
+            width: 40px;
+            height: 40px;
+            background: url(https://www.sundan.com/themes/shundian/images/login_name.png) no-repeat center center #f3f3f3;
+        }
+        .register_content .register .news input{
+            flex: 1;
+            text-indent: 10px;
+			width: 100px;
+			height: 38px;
+			outline: none;
+			border: 1px solid #999999;
+			text-indent: 5px;
+        }
+        .register_content .register .fname,.register_content .register .fpass{
+            font-size: 12px;
+        }
+        .register_content .register .vcode{
+            width: 100%;
+            height: 38px;
+            margin-top: 10px;
+        }
+        
+        .register_content .register .vcode span{
+            display: inline-block;
+            width: 100px;
+        }
+        .register_content .register .fnum{
+            display: block;
+            font-size: 12px;
+        }
+        .register_content .register .forget{
+            margin-bottom: 10px;
+        }
+        .register_content .register .forget a{
+            color: #111;
+            margin: 0 5px;
+            font-size: 14px;
+        }
+        .register_content .read{
+            font-size: 14px;
+            color: #333333;
+        }
+        .register_content .read input{
+            margin: 4px 15px 2px 0;
+            float: left;
+        }
+        .register_content .register button{
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid skyblue;
+            outline: none;
+            cursor: pointer;
+			font-size: 20px;
+			color: #f0f0f0;
+        }
+        .register_content .login {
+            margin-top: 10px;
+           
+        }
+        .register_content .login span{
+            font-size: 14px;
+            color: black;
+        }
+        .register_content .login a{
+            margin-left: 10px;
+            font-size: 16px;
+            color: skyblue;
+        }
+		.fname,.fpass{
+			padding: 0 10px;
+		}
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="register_content">
+        <div class="main">
+            <div class="register">
+                <h2>用户注册</h2>
+				<!-- 注册信息填写 用表单提交传值-->
+                <form action="http://localhost/Web-Shop/php/register.php" method="post">
+                    <p class="news"><i></i><input type="text" class="username" name="username" placeholder="用户名/ 支持中英文/ 4-10个字符"/></p>
+                    <span class="fname"></span>
+                    <p class="news"><i style="background-image: url(https://www.sundan.com/themes/shundian/images/member-password.png);"></i><input type="password" class="password" name="password"  placeholder="请设置登录密码，6-20个字符，须含数字非数字"/></p>
+                    <span class="fpass pass"></span>
+                    <p class="news"><i style="background-image: url(https://www.sundan.com/themes/shundian/images/member-password.png);"></i><input type="password" class="password"  placeholder="请再次确认登录密码"/></p>
+                    <span class="fpass repass"></span>
+
+                    <p class="read"><input type="checkbox" name="" id=""><span>我已阅读并同意 <a href="javascript:;">会员注册协议</a> 和 <a href="javascript:;">隐私保护政策</a</span></p>
+
+                    <button type="submit" name="submit">注&nbsp;&nbsp;&nbsp;册</button>
+                    <div></div>
+                </form>
+
+                <div class="login"><span>已有顺电账户</span><a href="">直接登录</a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../script/loadhf.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../script/registter.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
