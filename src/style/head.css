@@ -123,8 +123,9 @@ a{
     outline: none;
     cursor: pointer;
 }
-.search .serach_content .login{
-    
+/* 登录信息栏 */
+
+.search .serach_content .login,.user{
     margin-top: 15px;
     float: right;
 }
@@ -139,6 +140,22 @@ a{
     margin: 0 5px;
     color: #fff;
 }
+.user p{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+}
+.user span{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	color: #666666;
+}
+.user a{
+	display: block;
+	float: left;
+}
+
 .search .serach_content .goods_car{
     float: right;
     width: 50px;

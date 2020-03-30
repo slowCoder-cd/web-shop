@@ -1,12 +1,13 @@
 		//头文件的js部分
         //1.点击顶部广告栏的 × 去掉父元素  .parent() .remove()
-;(function (){
+;(function ($){
 
     const $clearX = $(".top_bar span");
     $clearX.on("click",function (){
         $(this).parent().remove();//移除当前对象的父元素；
     })
     const $bl_li = $(".bl_top .bl_right li" );
+	
     //2.划过 (-更多精品-为您服务-利电工厂-)我的利电添加相应样式 .css();
     $bl_li.on("mouseover",function (){
         $(this).find("span").css("background","url(../img/hy-up.png)");
@@ -22,6 +23,33 @@
         $(this).removeClass("active");
     })
 	
-	//
+	//3 检查本地存储是否存在user ；存在则让登录注册隐藏，个人信息显示 购物车进入
+	 if(localStorage.user){
+		 $(".login").hide();
+		 $(".user").show();
+		 $(".u_name").html(localStorage.user);
+		 //存在user，才能进入购物车，否则就进入登录页面
+		$(".goods_car a").on("click", function(){
+			location.href = "goodscar.html";
+		})
+		 
+	 }else{
+		 $(".user").hide();
+		 $(".login").show();
+		 //点击购物车，就进入登录页面
+		 $(".goods_car a").on("click", function(){
+			alert("请先登录");
+		 	location.href = "login.html";
+		 })
+	 }
+	$(".user a").on("click",function(){
+		if(confirm("你确定退出当前账号吗")){
+			localStorage.removeItem('user');
+			$(".user").hide();
+			$(".login").show();
+		}
+	})
 	
-})();
+	
+	
+})(jQuery);

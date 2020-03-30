@@ -128,7 +128,6 @@
 			$carbtn.on("click" ,function (){
 				let sid = $(this).parents(".page_news").find(".bg_img").attr("sid");
 				let num =  $(this).parents(".scar").find("input").val();
-				
 				alert("按钮触发了")
 				if( $.cookie('sid') &&  $.cookie('num')){//先判断是否有cookie
 				
