@@ -122,6 +122,8 @@ a{
     background-color: #00bbd7;
     outline: none;
     cursor: pointer;
+	color: #fff;
+	font-size: 18px;
 }
 /* 登录信息栏 */
 

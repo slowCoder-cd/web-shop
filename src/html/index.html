@@ -12,151 +12,70 @@
 	
 	
 	<title>无标题文档</title>
-    <style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		/* 轮播图结构 */
-        .banner{
-            width: 100%;
-            height: 380px;
-        }
-        .banner .ban_imgs{
-            width: 100%;
-            height: 380px;
-            position: relative;
-			margin: 0 auto;
-			background-color: red;
-        }
-        .banner  .ban_imgs_img{
-            width: 100%;
-            height: 380px;
-            position: absolute;
-            background-image: url(https://www.sundan.com/public/images/de/5b/ff/d4e9c48ede0b601f8c6a9974ca16dc6da2e438e2.jpg);
-			background-repeat: no-repeat; 
-			background-size: 100% 100%;
-        }
-        .banner .btn_index{
-            position: absolute;
-            left: 50%;
-            top: 90%;
-            transform: translate(-50%, -50%);
-			
-        }
-        .banner .btn_index li{
-            float: left;
-            margin:0 5px;
-            width: 20px;
-            height: 20px;
-            background-color: #999c9d;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 20px;
-            font-size: 12px;
-			color: #fff;
-			list-style: none;
-            cursor:pointer;
-        }
-		
-		/* 数据图片区域 */
-		.main{
-			width: 100%;
-			min-height: 2000px;
-			background-color: #f3f3f3;
-		}
-		.main .main_content{
-			width: 1226px;
-			margin: 0 auto;
-		}
-		.main .left_louti{
-			    position: fixed;
-			    top: 30%;
-			    display: block;
-			    margin-left: -50px;
-		}
-		.main .left_louti a{
-			display: block;
-			width: 40px;
-			height: 40px;
-			cursor: pointer;
-			background-color: #626262;
-			margin-bottom: 2px;
-			font-size: 14px;
-			color: white;
-			line-height: 40px;
-			text-align: center;
-		}
-		.main .main_content .section{
-			width: 1200px;
-			height: 400px;
-			border-bottom: 1px solid;
-			margin-bottom: 30px;
-		}
-		.main_content .section h2{
-			font-size: 24px;
-			font-weight: 600;
-			display: block;
-			overflow: hidden;
-			position: relative;
-		}
-		.main_content .section .nav_p{
-			overflow: hidden;
-			background: url(https://www.sundan.com/themes/shundian/images/index_bottom_l.png) repeat-x scroll bottom left;
-		}
-		.main_content .section .nav_p p{
-			background: url(https://www.sundan.com/themes/shundian/images/index_bottom_d.png)repeat-x scroll bottom left;
-			height: 25px;
-			width: 100px;
-			float: left;
-			font-size: 14px;
-			color: #919191;
-		}
-		.main_content .section .nav_p a{
-			float: right;
-			color: #919191;
-			margin-left: 40px;
-			font-size: 14px;
-		}
-
-		.main .main_content .longimg{
-			width: 1200px;
-			height: 40px;
-			margin-bottom: 30px;
-		}
-		
-		
-    </style>
+    <link rel="stylesheet" type="text/css" href="../style/index.css"/>
+	
 </head>
 <body>
     <header></header>
+	<!-- 顶部悬浮栏 -->
+	<div class="search top_of">
+	    <div class="serach_content">
+	        <h2 class="logo"><img src="https://www.sundan.com/public/images/b3/f1/d6/90e6da5108a61d0cefc48533af14682cb5ccc059.png?1496294362#w" alt=""></h2>
+	        <div class="s_main">
+	            <form action="">
+	                <input type="text" />
+	                <button >搜&nbsp;&nbsp;索</button>
+	            </form>
+	            <div class="goods_car">
+	                <a ></a>
+	            </div>
+	            <div class="login" style="display: none;">
+	                <a href="register.html">注册</a>
+	                <a href="login.html">登录</a>
+	            </div>
+	            <div class="user">
+					<p>
+						<span>欢迎</span>
+						<span class="u_name" style="color: #ff0000;">王五</span>
+						<a href="javascript:;" >退出</a>
+					</p>
+				</div>
+	        </div>
+	    </div>
+	</div>
 	
     <div class="banner">
         <div class="ban_imgs">
-            <div class="ban_imgs_img"></div>
-            <div class="ban_imgs_img"></div>
-            <div class="ban_imgs_img"></div>
-            <div class="ban_imgs_img"></div>
-            <div class="ban_imgs_img"></div>
-            <div class="ban_imgs_img"></div>
-            <div class="ban_imgs_img"></div>
+			<!-- 轮播图片 -->
+            <div class="ban_imgs_img" style="opacity: 1; background-image: url(https://www.sundan.com/public/images/0c/78/20/1c258d333083a001970b6a645ee211988811f366.jpg);" ></div>
+            <div class="ban_imgs_img" style="background-image: url(https://www.sundan.com/public/images/b1/9c/a9/cdd5beee454a489fdb63ebc19ef52c93d753a663.jpg);"></div>
+            <div class="ban_imgs_img" style="background-image: url(https://www.sundan.com/public/images/0c/78/20/1c258d333083a001970b6a645ee211988811f366.jpg);"></div>
+            <div class="ban_imgs_img" style="background-image: url(https://www.sundan.com/public/images/de/5b/ff/d4e9c48ede0b601f8c6a9974ca16dc6da2e438e2.jpg);"></div>
+            <div class="ban_imgs_img"  style="background-image: url(https://www.sundan.com/public/images/0c/78/20/1c258d333083a001970b6a645ee211988811f366.jpg);"></div>
+            <div class="ban_imgs_img" style="background-image: url(https://www.sundan.com/public/images/b1/9c/a9/cdd5beee454a489fdb63ebc19ef52c93d753a663.jpg);"></div>
+            <div class="ban_imgs_img" style="background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/755aca9487082e7698e16f17cfb70839.jpg?thumb=1&w=1533&h=575&f=webp&q=90);"></div>
             <div class="btn_index">
+				<!-- 数字按钮 -->
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
+                    <li class="li active_num">1</li>
+                    <li class="li">2</li>
+                    <li class="li">3</li>
+                    <li class="li">4</li>
+                    <li class="li">5</li>
+                    <li class="li">6</li>
+                    <li class="li">7</li>
                 </ul>
             </div>
+			<!-- 左右箭头 -->
+			<div class="act_left"></div>
+			<div class="act_right"></div>
         </div>
 	</div>
 	
 	<!-- 数据图片区域 -->
 	<div class="main">
 		<div class="main_content">
+			
 			<!-- 左边楼梯导航部分 -->
 			<div class="left_louti">
 				<a >推荐</a>
@@ -206,7 +125,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -216,7 +143,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -226,7 +161,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -236,7 +179,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -246,7 +197,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -256,7 +215,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -264,7 +231,15 @@
 			<div class="section">
 				<div class="ssection_nav">
 					<h3>推荐</h3>
-					
+					<div class="nav_p">
+						<p>RECOMMEND</p>
+						<a href="javascript:;">More+</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">洗碗机</a>
+						<a href="javascript:;">美的专区</a>
+						<a href="javascript:;">航拍器</a>
+						<a href="javascript:;">高品质手机</a>
+					</div>
 				</div>
 				<div class="section_img"></div>
 			</div>
@@ -277,6 +252,6 @@
     
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../script/loadhf.js" type="text/javascript" charset="utf-8"></script>
-     <script src="" type="text/javascript" charset="utf-8"></script>
+     <script src="../script/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
