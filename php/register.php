@@ -23,6 +23,6 @@ if (isset($_POST['submit'])) {
    //执行插入的sql语句。
    $conn->query("insert registry1903 values(null,'$user','$pass', NOW())");
     //如果注册成功，跳到登录页面
-    header('location:http://localhost/Web-Shop/src/html/login.html');
-
+	$url = "location:http://localhost/Web-Shop/src/html/login.html";
+	header("location:http://localhost/Web-Shop/src/html/login.html");
 };

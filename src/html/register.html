@@ -125,9 +125,9 @@
                 <h2>用户注册</h2>
 				<!-- 注册信息填写 用表单提交传值-->
                 <form action="http://localhost/Web-Shop/php/register.php" method="post">
-                    <p class="news"><i></i><input type="text" class="username" name="username" placeholder="用户名/ 支持中英文/ 4-10个字符"/></p>
+                    <p class="news"><i></i><input autocomplete="off" type="text" class="username" name="username" placeholder="用户名/ 支持中英文数字/ 4-10个字符"/></p>
                     <span class="fname"></span>
-                    <p class="news"><i style="background-image: url(https://www.sundan.com/themes/shundian/images/member-password.png);"></i><input type="password" class="password" name="password"  placeholder="请设置登录密码，6-20个字符，须含数字非数字"/></p>
+                    <p class="news"><i style="background-image: url(https://www.sundan.com/themes/shundian/images/member-password.png);"></i><input autocomplete="off" type="password" class="password" name="password"  placeholder="请设置登录密码，6-20个字符，须含数字非数字"/></p>
                     <span class="fpass pass"></span>
                     <p class="news"><i style="background-image: url(https://www.sundan.com/themes/shundian/images/member-password.png);"></i><input type="password" class="password"  placeholder="请再次确认登录密码"/></p>
                     <span class="fpass repass"></span>
@@ -138,7 +138,7 @@
                     <div></div>
                 </form>
 
-                <div class="login"><span>已有顺电账户</span><a href="">直接登录</a></div>
+                <div class="login"><span>已有顺电账户</span><a href="login.html">直接登录</a></div>
             </div>
         </div>
     </div>

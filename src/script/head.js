@@ -1,4 +1,4 @@
-//头文件的js部分
+		//头文件的js部分
         //1.点击顶部广告栏的 × 去掉父元素  .parent() .remove()
 ;(function (){
 
@@ -6,11 +6,7 @@
     $clearX.on("click",function (){
         $(this).parent().remove();//移除当前对象的父元素；
     })
-
     const $bl_li = $(".bl_top .bl_right li" );
-    
-
-    
     //2.划过 (-更多精品-为您服务-利电工厂-)我的利电添加相应样式 .css();
     $bl_li.on("mouseover",function (){
         $(this).find("span").css("background","url(../img/hy-up.png)");
@@ -25,6 +21,7 @@
     }, function(){
         $(this).removeClass("active");
     })
-
-
+	
+	//
+	
 })();

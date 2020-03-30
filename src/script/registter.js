@@ -14,10 +14,11 @@
 					user: $user.val()
 				}
 		}).done(function (res){//后台去数据库判断，存在同名则返回1 否则为空
-			console.log(res);//测试成功
-			let reg = /\D{4,10}/;//定义正则，匹配非数字4-10个字符
+			//console.log(res);//测试成功
+			console.log(res.indexOf("1"));
+			let reg = /[\u4e00-\u9fa5_a-zA-Z0-9_]{4,10}/;//定义正则，匹配4-10个字符
 			if(reg.test($user.val())){//判断是否满足格式
-				if(!res){//判断是否重名
+				if( res.indexOf("1") == -1){//判断是否重名 res.indexOf("1");无则返回-1 ，
 					$(".fname").html(" √ ");
 					$(".fname").css("color","green");
 					$usersign = true;
