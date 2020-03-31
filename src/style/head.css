@@ -196,7 +196,10 @@ a{
     position: relative;
 }
 /* 二级菜单 */
-.heade .h_nav .nav_left ul{
+.heade .h_nav .nav_left:hover .good_list{
+	display: block;
+}
+.heade .h_nav .nav_left .good_list{
     /* 所有商品列表 */
     position: absolute;
     width: 200px;
@@ -205,7 +208,23 @@ a{
     z-index: 999;
     display: none;
 }
-
+.nav_left .good_list li{
+	padding: 5px 30px;
+	overflow: hidden;
+	margin:0 0 5px 0 ;
+}
+.nav_left .good_list li:hover{
+	background-color: #fff;
+}
+.nav_left .good_list li a{
+	color: #333;
+	float: left;
+}
+.nav_left .good_list li img{
+	float: left;
+	margin-top: 7px;
+	margin-right: 5px;
+}
 /* 二级菜单 右边展示部分*/
 .nav_left .list_text{
     width: 800px;
@@ -214,11 +233,41 @@ a{
     z-index: 999;
     position: absolute;
     margin-left: 200px;
+	background-color: #fff;
     display: none;
 } 
-.heade .h_nav .nav_left:hover ul,.list_text {
-    display: block;
+.list_text li{
+	position: relative;
+	float: left;
+	width: 180px;
+	margin-right: 60px;
+	padding: 10px  0 10px 30px;
+	height: 360px;
+	text-align: left;
 }
+.list_text li .h3 {
+	border-bottom: 1px solid #333333;
+	padding-left:2px ;
+}
+.list_text li .h3 a{
+	color: #000000;
+	font-weight: 600;
+}
+.list_text li .p1{
+	margin-top: 10px;
+}
+.list_text li .p1 a{
+	color: #333333;
+}
+.list_text li img{
+	position: absolute;
+	display: block;
+	margin-top: 20px;
+	width: 160px;
+	height: 60px;
+	bottom: 10px;
+}
+/* 一开始可见的导航栏 */
 .heade .h_nav .menu{
     float: left;
 }

@@ -50,6 +50,22 @@
 		}
 	})
 	
+	//4.二级菜单显示
+	$(".good_list").on("mouseover",function(){
+		$(".list_text").show();
+		
+		$(".list_text").on("mouseover",function(){
+			$(".good_list").show();
+			$(".list_text").show();
+		});
+		$(".list_text").on("mouseout",function(){
+			$(".list_text").hide();
+		});
+	});
+	$(".good_list li").on("mouseout",function(){
+		$(".list_text").hide();
+		
+	});
 	
 	
 })(jQuery);

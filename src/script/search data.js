@@ -1,6 +1,6 @@
 ;(function ($){
 	$.ajax({
-		url:"http://localhost/Web-Shop/php/listdata.php",
+		url:"http://localhost/web-shop/php/listpage.php",
 		dataType: 'json'
 	}).done(function (data){
 		
@@ -11,7 +11,7 @@
 		    $str += `
 			<li>
 			    <a href="Detail Pages.html?sid=${value.sid}">
-			        <img src="${value.url}" sid=${value.sid}/>
+			        <img class="lazy" data-original="${value.url}" sid=${value.sid}/>
 			        <p>${value.title}</p>
 			        <span class="price">￥${value.price}</span>
 			        <span class="sail">销量：${value.sailnumber}</span>
@@ -21,6 +21,7 @@
 		});
 		$str += "</ul>"
 		$(".e_list").html($str);
+		$("img.lazy").lazyload();
 	});
 	$(".e_list").on("mouseover","li",function(){
 		//console.log($(this));

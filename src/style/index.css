@@ -89,10 +89,14 @@
   margin: 0 auto;
 }
 
+.act_louti {
+  background-color: #00bbd7 !important;
+}
+
 .main .left_louti {
   position: fixed;
   top: 30%;
-  display: block;
+  display: none;
   margin-left: -50px;
 }
 .main .left_louti a {
@@ -106,6 +110,9 @@
   color: white;
   line-height: 40px;
   text-align: center;
+}
+.main .left_louti .backtop {
+  background: url(../img/index_top.jpg) no-repeat;
 }
 
 .main .main_content .section {
