@@ -83,6 +83,7 @@
 					$str += "</ul>"
 					$(".e_list").html($str);
 					$("img.lazy").lazyload(); //懒加载
+					
 
 					array_default = []; //排序前的li数组
 					array = []; //排序中的数组
