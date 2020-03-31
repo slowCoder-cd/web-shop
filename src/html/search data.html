@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>搜索结果页面,商品列表页</title>
+	<link rel="stylesheet" type="text/css" href="../style/pagination.css"/>
     <style>
         .ending {
             width: 100%;
@@ -68,6 +69,10 @@
 			float: right;
 			color: #666666;
 		}
+		
+		.page{
+			margin-top: 50px;
+		}
     </style>
 </head>
 <body>
@@ -82,11 +87,21 @@
             <div class="e_brand">
                 品牌：
             </div>
+			<div class="sort">
+				<p>按价格排列</p>
+				<a href="javascrpt:;">默认排序</a>
+				<a href="javascrpt:;">升序排列</a>
+				<a href="javascrpt:;">降序排列</a>
+			</div>
 
             <!-- 结果列表区 -->
             <div class="e_list">
                 
             </div>
+			<div class="pagelist">
+			    <div class="m-style page">
+			    </div>
+			</div>
         </div>
     </div>
 
@@ -94,6 +109,8 @@
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/jquery_lazyload/1.7.1/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../script/loadhf.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../script/jquery.pagination.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../script/search%20data.js" type="text/javascript" charset="utf-8"></script>
+	
 </body>
 </html>

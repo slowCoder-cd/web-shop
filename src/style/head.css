@@ -97,13 +97,13 @@ a{
     float: left;
     cursor: pointer;
 }
-.search .serach_content form{
+.search .serach_content .sosuo{
     float: left;
     width: 730px;
     height: 40px;
     margin-top: 15px;
 }
-.search .serach_content form input{
+.search .serach_content .sosuo .sinput{
     width: 600px;
     height: 40px;
     border: 1px solid #cccccc;
@@ -113,8 +113,10 @@ a{
     text-indent: 40px;
     font-size: 18px;
     color: #333333;
+	margin: 0 !important;
+	text-align: left !important;
 }
-.search .serach_content form button{
+.search .serach_content .sosuo button{
     width: 127px;
     height: 40px;
     float: left;
