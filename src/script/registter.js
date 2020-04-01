@@ -75,6 +75,7 @@
 	
 	
 	$('form').on('submit', function () {
+		
 	    if (!$usersign || !$passsign || !$repass || !$read) {
 	        return false;//阻止提交
 	    }

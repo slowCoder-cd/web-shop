@@ -16,7 +16,7 @@
         $(this).find("span").css("background","url(../img/hy-down.png)");
     });
 
-    $me_li = $(".heade .h_nav .menu li");
+    let $me_li = $(".heade .h_nav .menu li");
     $me_li.hover(function (){
         $(this).addClass("active");
     }, function(){
