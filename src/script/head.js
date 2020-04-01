@@ -64,8 +64,10 @@
 	});
 	$(".good_list li").on("mouseout",function(){
 		$(".list_text").hide();
-		
 	});
-	
+	//5。搜索转到商品数据页
+	$(".sosuo button").on("click",function(){
+		location.href = "search data.html";
+	})
 	
 })(jQuery);

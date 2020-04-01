@@ -1,0 +1,110 @@
+	.size{
+		    height: 300px;
+		    width: 100%;
+		}
+		.size .size_content{
+			width: 1220px;
+			margin: 0 auto;
+		}
+		.size .size_content .brand{
+			width: 600px;
+			height: 200px;
+		}
+		.brand img{
+			width: 1100px;
+			height: 200px;
+		}
+		.b11{
+			margin-top: 30px;
+			
+		}
+		.b11 span{
+			font-size: 14px;
+			color: #313131;
+			line-height: 33px;
+			font-weight: bold;
+			padding-left: 10px;
+		}
+		.b11 select{
+			border: none;
+			outline: none;
+			border: 1px solid #ccc;
+		}
+		
+		
+        .ending {
+            width: 100%;
+			background-color: #f0f0f0;
+        }
+		
+        .e_content{
+            width: 1226px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .ending .sort{
+			margin-top: 30px;
+			height: 40px;
+			width: 400px;
+			display: flex;
+			background-color: #fff;
+		}
+		.ending .sort p,.ending .sort a{
+			width: 100px;
+			border-right: 1px solid #ccc;
+			line-height: 40px;
+			text-align: center;
+		}
+		/* 渲染数据样式 */
+        .e_list{
+            min-height: 600px;
+            width: 100%;
+        }
+		.e_list ul{
+			width: 1226px;
+			margin: 0 auto;
+		}
+		.e_list ul li{
+			float: left;
+			width: 260px;
+			height: 350px;
+			padding: 10px 5px;
+			border: 1px solid #CCCCCC;
+			margin: 30px 33px 0 0;
+			background-color: #fff;
+		}
+		.e_list ul li a{
+			margin: 0 auto;
+			color: #333333;
+			display: block;
+			width: 200px;
+			height: 300px;
+			text-align: center;
+		}
+		.e_list ul li a img{
+			width: 200px;
+			height: 200px;
+		}
+		.e_list ul li a p{
+			line-height: 20px;
+			height: 60px;
+			font-size: 14px;
+			margin: 10px 0;
+			overflow: hidden;
+		}
+		.e_list ul li a span{
+			display: block;
+		}
+		.e_list ul li a .price{
+			float: left;
+			color: #fc3637;
+		}
+		.e_list ul li a .sail{
+			float: right;
+			color: #666666;
+		}
+		
+		/* 分页 */
+		.page{
+			margin-top: 50px;
+		}

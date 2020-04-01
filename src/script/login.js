@@ -59,12 +59,5 @@
 		$(".vcode .num").on("click",function(){
 			vcode();
 		});
-		
 			
-		
-		
-		
-		
-	   
-	
 }(jQuery);

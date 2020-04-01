@@ -5,94 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>搜索结果页面,商品列表页</title>
 	<link rel="stylesheet" type="text/css" href="../style/pagination.css"/>
-    <style>
-        .ending {
-            width: 100%;
-			background-color: #f0f0f0;
-        }
-        .e_content{
-            width: 1226px;
-            overflow: hidden;
-            margin: 0 auto;
-        }
-        .e_h3{
-            height: 50px;
-            width: 100%;
-        }
-        .e_brand{
-            width: 100%;
-            
-        }
-        .e_list{
-            min-height: 600px;
-            width: 100%;
-        }
-		.e_list ul{
-			width: 1226px;
-			margin: 0 auto;
-		}
-		.e_list ul li{
-			float: left;
-			width: 260px;
-			height: 350px;
-			padding: 10px 5px;
-			border: 1px solid #CCCCCC;
-			margin: 30px 33px 0 0;
-			background-color: #fff;
-		}
-		.e_list ul li a{
-			margin: 0 auto;
-			color: #333333;
-			display: block;
-			width: 200px;
-			height: 300px;
-			text-align: center;
-		}
-		.e_list ul li a img{
-			width: 200px;
-			height: 200px;
-		}
-		.e_list ul li a p{
-			line-height: 20px;
-			height: 60px;
-			font-size: 14px;
-			margin: 10px 0;
-			overflow: hidden;
-		}
-		.e_list ul li a span{
-			display: block;
-		}
-		.e_list ul li a .price{
-			float: left;
-			color: #fc3637;
-		}
-		.e_list ul li a .sail{
-			float: right;
-			color: #666666;
-		}
-		
-		.page{
-			margin-top: 50px;
-		}
-    </style>
+    <link rel="stylesheet" type="text/css" href="../style/search.css"/>
 </head>
 <body>
     <header></header>
+	<div class="size">
+		<div class="size_content">
+			<div class="brand">
+				<!-- 品牌区 -->
+				<div class="b11">
+					<span>你已选择</span>
+					<select name="">
+						<option value="">手机通讯</option>
+						<option value="">大家电</option>
+						<option value="">电脑</option>
+						<option value="">娱乐</option>
+					</select>
+				</div>
+				
+				<img src="../img/size.png" >
+			</div>
+		</div>
+	</div>
 
     <div class="ending">
         <div class="e_content">
-            <!-- 结果标题 -->
-            <div class="e_h3">所在位置></div>
-
-            <!-- 品牌区 -->
-            <div class="e_brand">
-                品牌：
-            </div>
+           
 			<div class="sort">
-				<p>按价格排列</p>
+				<p>价格排列</p>
 				<a href="javascrpt:;">默认排序</a>
-				<a href="javascrpt:;">升序排列</a>
-				<a href="javascrpt:;">降序排列</a>
+				<a href="javascrpt:;">升序排序</a>
+				<a href="javascrpt:;">降序排序</a>
 			</div>
 
             <!-- 结果列表区 -->
