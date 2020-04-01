@@ -2,7 +2,7 @@
 	width: 100%;
 	height: 600px;
 	background:url(https://www.sundan.com/public/images/84/ad/0d/470776d8e6a087986897d96fb6a217d7abcf5f81.jpg) no-repeat center center ;
-	
+	/* 背景图 */
 }
 .register_content .main{
 	width: 1226px;
@@ -26,7 +26,7 @@
 	height: 50px;
 	line-height: 50px;
 }
-
+/* 使用flex布局 */
 .register_content .register .news{
 	display: flex;
 	width: 100%;
@@ -37,6 +37,7 @@
 	height: 40px;
 	background: url(https://www.sundan.com/themes/shundian/images/login_name.png) no-repeat center center #f3f3f3;
 }
+/* 注册文本框设为flex：1 */
 .register_content .register .news input{
 	flex: 1;
 	text-indent: 10px;
@@ -46,6 +47,7 @@
 	border: 1px solid #999999;
 	text-indent: 5px;
 }
+/* 提示文字大小12px */
 .register_content .register .fname,.register_content .register .fpass{
 	font-size: 12px;
 }
@@ -71,6 +73,7 @@
 	margin: 0 5px;
 	font-size: 14px;
 }
+/* 阅读协议 */
 .register_content .read{
 	font-size: 14px;
 	color: #333333;
@@ -92,9 +95,9 @@
 	font-size: 20px;
 	color: #f0f0f0;
 }
+/* 转到登录页面 */
 .register_content .login {
 	margin-top: 10px;
-   
 }
 .register_content .login span{
 	font-size: 14px;
@@ -105,6 +108,7 @@
 	font-size: 16px;
 	color: skyblue;
 }
+/* 错误提示文字 */
 .fname,.fpass{
 	padding: 0 10px;
 }

@@ -10,6 +10,15 @@ function addcar (){
 	$carbtn.on("click" ,function (){
 		let sid = $(this).parents(".page_news").find(".bg_img").attr("sid");
 		let num =  $(this).parents(".scar").find("input").val();
+		
+		if(localStorage.user){
+			return true;	 
+		}else{
+			alert("请先登录");
+			location.href = "login.html";
+			return false;
+		}
+		
 		alert("加入购物车成功");
 		if( $.cookie('sid') &&  $.cookie('num')){//先判断是否有cookie
 		
