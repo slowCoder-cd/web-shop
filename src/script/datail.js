@@ -1,6 +1,5 @@
-	
+
 (function($){
-	
 	mixGlass();
 	function mixGlass(){
 		let sid = parseInt(location.search.split("=")[1]);//获取地址栏的?之后的内容，用"="分割成数组
@@ -120,6 +119,7 @@
 		});
 	
 	};
+	
 	addcar();
 	function addcar (){
 		//添加到购物车，cookie存贮，添加jquery.cookie
@@ -127,16 +127,14 @@
 		let sidarr = [];
 		let numarr = [];
 		//读取cookie $.cookie('the_cookie');
-		//console.log($.cookie('sid'))
+		console.log($.cookie('sid'))
 		const $carbtn = $(".scar a");//取到按钮
 		
 		$carbtn.on("click" ,function (){
 			let sid = $(this).parents(".page_news").find(".bg_img").attr("sid");
 			let num =  $(this).parents(".scar").find("input").val();
-			
-			if(localStorage.user){
-				return true;	 
-			}else{
+			console.log(1)
+			if(!localStorage.user){
 				alert("请先登录");
 				location.href = "login.html";
 				return false;
@@ -183,8 +181,8 @@
 		})
 	}
 	
-	
 })(jQuery);
+
 			
 			
 			

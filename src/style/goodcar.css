@@ -31,7 +31,7 @@
 			line-height: 60px;
 		}
 		.itemcar .t-goods{
-			width: 100px;
+			width: 105px;
 			line-height: 60px;
 		}
 		.itemcar .t-goods img{
@@ -45,7 +45,7 @@
 			margin-left: 20px;
 		}
 		.itemcar .t-props p{
-			width: 370px;
+			width: 360px;
 			height: 60px;
 			line-height: 60px;
 			overflow: hidden;
@@ -105,6 +105,9 @@
 		.Total{
 			margin-top: 10px;
 			padding: 10px 0;
+		}
+		.Total .t-goods{
+			width: 105px !important;
 		}
 		.Total .t-quantity i{
 			font-size: 14px;
