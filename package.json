@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/xiaochen168-cpu/web-shop#readme",
   "devDependencies": {
-    "babel-core": "^6.2.4",
+    "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "browserify": "^16.5.1",
     "bundle": "^2.1.0",
